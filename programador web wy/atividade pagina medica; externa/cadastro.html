@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+    <link rel="stylesheet" href="cad.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="CheckUp">
+        <span>CHECKUP</span>
+    </div>
+
+<div class="container_form">
+    <h1>Formulário de Cadastro</h1>
+
+    <form class="form" action="#" method="post">
+        
+        <div class="form_grupo">
+            <label for="nome" class="form_label">Nome</label>
+            <input type="text" name="nome" class="form_input" id="nome" placeholder="Nome" required aria-label="Nome do usuário">
+        </div>
+
+        <div class="form_grupo">
+            <label for="numero" class="form_label">Número</label>
+            <input type="number" name="numero" class="form_input" id="numero" placeholder="Número de celular" required aria-label="Número de celular">
+        </div>
+        
+        <div class="form_grupo">
+            <label for="email" class="form_label">Email</label>
+            <input type="email" name="email" class="form_input" id="email" placeholder="email" required aria-label="Endereço de e-mail">
+        </div>
+        
+        <div class="form_grupo">
+            <label for="datanascimento" class="form_label">Data de Nascimento</label>
+            <input type="date" name="datanascimento" class="form_input" id="datanascimento" placeholder="Data de Nascimento" required aria-label="Data de nascimento">
+        </div>        
+
+        <div class="form_grupo">
+            <span class="legenda">Sexo:</span>
+            
+            <div class="radio-btn">
+                <input type="radio" class="form_new_input" id="masculino" name="sexo" value="Masculino" required aria-label="Sexo Masculino">
+                <label for="masculino" class="radio_label form_label"> <span class="radio_new_btn"></span> Masculino</label>
+            </div>
+
+            <div class="radio-btn">
+                <input type="radio" class="form_new_input" id="feminino" name="sexo" value="Feminino" required aria-label="Sexo Feminino">
+                <label for="feminino" class="radio_label form_label"> <span class="radio_new_btn"></span> Feminino</label>
+            </div>
+            <div class="radio-btn">
+                <input type="radio" class="form_new_input" id="outro" name="sexo" value="Outro" required aria-label="Outro sexo">
+                <label for="outro" class="radio_label form_label"> <span class="radio_new_btn"></span> Outro</label>
+            </div>
+
+        </div>
+        
+        <div class="submit">
+            <input type="hidden" name="acao" value="enviar">
+            <button type="submit" name="Submit" class="submit_btn" aria-label="Cadastrar usuário">Cadastrar</button>
+        </div>
+        
+    </form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+ /* Redefinindo os padrões de espaçamentos  */
+body{
+    padding: 0; 
+    margin: 0;
+    font-family: arial;
+    background-color: black;
+}
+
+.cabeçalho{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabeçalho h2{
+    text-align: right;
+    color: white;
+    padding: 1rem;
+    margin-left: 1rem;
+    display: flex;
+}
+
+.navegacao{
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+.links a{
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menu{
+    color: white;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.menu:hover{
+    color: rgb(0, 182, 255);
+    transition: .15s ease-in-out;
+    transform: scale(1.2);
+    
+}
+
+#btn{
+    margin-right: 2rem;
+}
+
+.botao-contato{
+    color: white;
+    background-color: #0088FF;
+    padding: 11px 18px;
+    margin-right: 2rem;
+    border-radius: 8px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.botao-contato:hover{
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 15px  rgba(14, 239, 255, 0.548);
+    transition: .15s ease-in-out;
+    transform: scale(0.95);
+}
+
+/* -- corpo do site -- */
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 87vh;
+    overflow: hidden;
+}
+
+.container img{
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+}
+
+.container::after{
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to right, rgb(0, 0, 0) 20%, transparent);
+}
+
+.imagem .texto{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translateY(-50%, -50%);
+    color: white;
+    text-align: left;
+    max-width: 455px;
+    line-height: 1.8rem;
+    z-index: 2;
+    font-size: 20px;
+}
+
+.destaque{
+    font-weight: bold;
+}
+
+.bndois{
+    padding: 9px 14px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.bndois:hover{
+    background-color: #0088FF;
+    box-shadow: 0px 0px 15px  rgba(14, 239, 255, 0.548);
+    transform: translateY(-2px);
+}
+
+
+
+/* Rodape */
+
+footer{
+
+background-color: #272727;
+color: #FFF;
+padding: 2rem;
+text-align: center;
+}
+        
+footer p{
+margin: 0;
+}
