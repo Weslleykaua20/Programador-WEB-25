@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 245, 245);
+}
+
+.container{
+    display: grid;
+    max-width: 450px;
+    margin: 5rem 4rem;
+    background-color: white;
+    height: 600px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.display{
+    
+}
+
+.teclado{
+    display: grid;
+
+}
