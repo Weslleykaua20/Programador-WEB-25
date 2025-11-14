@@ -4,25 +4,25 @@ body{
     font-family: inter;
 }
 
-.imagem{
-
+.imagem-topo{
+    width: 100%;
+    height: 150px;
+    display: flex;
 }
 
-.imagem-topo{    
+.imgto{
     width: 100%;
-    height: 180px;px ;
-    background-position: center;
-    background-image: url(perfect.jpg);
-    background: linear-gradient();
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
+    height: 150px;
+
 }
 
 .textotop{
-    padding: 0 4%;
     color: white;
     font-size: 26px;
+    font-weight: 500;
 }
 
+#nos{
+    color: #522C27;
+    font-weight: 800;
+}
